@@ -1,0 +1,123 @@
+<!-- Absence de doctype -->
+
+<!-- lang de "de" à fr -->
+<html lang="fr">
+  <head>
+    <!-- Mauvais encodage -->
+    <meta charset="UTF-8" />
+    <!-- Absence de meta viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Keywords stuffing -->
+    <meta
+      name="description"
+      content="Le meilleur choix de matériel informatique en France. De la carte graphique à la barette de RAM, on a tout ce qu'il vous faut."
+    />
+    <!-- <title> trop court -->
+    <title>Techlab</title>
+  </head>
+  <body>
+    <!-- Pas de header -->
+    <header id="home">
+      <nav>
+        <!-- Mauvais href(s) -->
+        <a href="#home">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Le titre de la page doit être un h1 -->
+      <h1>
+        Bienvenue sur TechLab.com, le premier distributeur de matériel
+        informatique en France.
+      </h1>
+      <!-- Pour aller quelque part, on utilise des liens -->
+      <a href="#contact">Contact</a>
+      <a href="#services">Services</a>
+    </header>
+    <!-- On rajoute "main" et "section" pour la sémantique -->
+    <main>
+      <section id="produits">
+        <!-- Respect de l'ordre des headings -->
+        <h2>Nos différents produits</h2>
+        <!-- Utilisation de l'élément sémantique "article" -->
+        <article>
+          <!-- Respect de l'ordre des headings -->
+          <h3>Carte mère : MSI MAG B550 TOMAHAWK</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+            adipisci ut laborum itaque, tenetur hic.
+          </p>
+          <!-- Ne pas confondre les boutons et les liens -->
+          <a href="/produits/carte-mere-msi.html">Caractéristiques</a>
+        </article>
+        <article>
+          <h3>
+            RAM : Corsair Vengeance LPX Black DDR4 2 x 16 Go 3200 MHz CAS 16
+          </h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+            adipisci ut laborum itaque, tenetur hic.
+          </p>
+          <a href="/produits/ram-corsair-vengeance.html">Caractéristiques</a>
+        </article>
+        <article>
+          <h3>Carte graphique : Gigabyte GeForce RTX 3090 XTREME 24G</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+            adipisci ut laborum itaque, tenetur hic.
+          </p>
+          <a href="/produits/carte-graphique-geforce-rtx-3090"
+            >Caractéristiques</a
+          >
+        </article>
+      </section>
+      <section id="services">
+        <!-- Ordre des headings -->
+        <h2>Nos services</h2>
+        <div>
+          <!-- Ordre des headings -->
+          <h3>Réparation d'ordinateur</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            magni, modi assumenda at laborum praesentium facilis inventore
+            facere a dolorem.
+          </p>
+          <!-- Ne pas oublier les alts pour les images importantes -->
+          <img src="laptop.jpg" alt="ordinateur portable" />
+        </div>
+        <div>
+          <h3>Reprise de matériel d'occasion</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia totam
+            molestias ullam, porro ut nam.
+          </p>
+          <img src="money.jpg" alt="argent" />
+        </div>
+      </section>
+      <section id="contact">
+        <!-- Ordre des headings  -->
+        <h2>Une question ? Contactez-nous !</h2>
+        <form>
+          <label for="email">Votre mail</label>
+          <!-- Mauvais type + rajout d'un id -->
+          <input type="email" id="email" name="email" />
+
+          <!-- Rajout d'un label -->
+          <label for="name">Votre nom</label>
+          <input id="name" type="text" name="name" />
+
+          <label for="message" name="message">Votre message</label>
+          <!-- Textarea quand on attend un texte -->
+          <textarea name="message" id="message"></textarea>
+
+          <!-- Pas de divs dans un bouton -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer sémantique -->
+    <footer>
+      <a href="mentions.html"> Tous droits réservés </a>
+    </footer>
+  </body>
+</html>
