@@ -1,4 +1,4 @@
-# Exercice : Nettoyez-moi cette page ! 🧼
+## Exercice : Nettoyez-moi cette page ! 🧼
 
 Code source de la vidéo youtube : [Lien vers la vidéo](https://www.youtube.com/watch?v=GQT10kptwfs)
 
